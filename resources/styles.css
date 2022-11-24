@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&family=Special+Elite&display=swap');
+
+body {
+    background-color: #DB9E88;
+    font-family: "Special Elite", sans-serif;
+}
+/*nav*/
+nav {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #B1DED5;
+    padding: 15px 0;
+}
+nav img {
+ padding-left: 30px;
+}
+nav img:hover {
+    cursor:pointer;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+
+li a {
+    color:#4F3D6B;
+    text-decoration: none;
+    background-color: #DBD995;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 10px;
+    border: 2px solid #DBD995;
+    
+}
+li a:hover {
+    background-color: #B1DED5;
+}
+li a:active {
+    background-color: #4F3D6B;
+    color:#DBD995;
+    border: 2px solid #B1DED5;
+
+}
+/*header*/
+header {
+    background-image: url(./images/khloe-arledge-ypi0l7vP0Vw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: #4F3D6B;
+    padding-top: 45px;
+    padding-left: 2%;
+    font-family: "Permanent Marker", sans-serif;
+}
+/*blurb*/
+.blurb {
+    color:#3B2D4F;
+    border: 2px dashed #B1DED5;
+    margin-top: 20px;
+    padding-left: 20px;
+    max-width: 1000px;
+}
+/*gallery*/
+.photos1,
+.photos2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonial {
+    text-align: left;
+    margin-right: 0;
+    background-color: #DBD995;
+    padding: 15px 0;
+}
+.testimonial h3 {
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 1.75em;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+.testimonial .name {
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 0;
+    padding-right: 10%;
+}
+.photos1 img,
+.photos2 img {
+    width: 30%;
+    height: auto;
+}
+
+/*footer*/
+footer {
+    background-color: #B1DED5;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.cta h2 {
+    text-decoration: underline;
+}
+
+/*screens*/  
+@media only screen and (max-width: 1000px) {
+    nav img {
+        display: none;
+    }
+    nav ul {
+        width: 100%;
+    }
+    header {
+        padding-top: 20%;
+        margin-top: 15px;
+    }
+    header h1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #DBD995;
+        padding-top: 0;
+
+    }
+}
+@media only screen and (max-width: 480px) {
+    .hide {
+        display: none;
+    }
+    .photos1 img,
+    .photos2 img {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    nav ul {
+        padding: 0;
+    }
+}
