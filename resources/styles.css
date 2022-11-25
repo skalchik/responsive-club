@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&family=Special+Elite&display=swap');
 
+
 body {
+    width: 100%;
+    margin-left: 0;
     background-color: #DB9E88;
     font-family: "Special Elite", sans-serif;
+}
+html{
+    height: 100%;
 }
 /*nav*/
 nav {
